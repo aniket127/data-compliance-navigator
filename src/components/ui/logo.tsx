@@ -45,10 +45,10 @@ export const Logo: React.FC<LogoProps> = ({
             'font-bold leading-none tracking-tight',
             textSizeClasses[size]
           )}>
-            Data Compliance
+            Cognizant Data Compliance
           </span>
           <span className="text-xs text-muted-foreground">
-            Companion Agent
+            Agent
           </span>
         </div>
       )}

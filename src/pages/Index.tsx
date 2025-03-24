@@ -36,8 +36,8 @@ const Index = () => {
           </div>
           
           <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-6">
-            Data Compliance
-            <span className="block text-primary ml-1">Companion Agent</span>
+            Cognizant Data Compliance
+            <span className="block text-primary ml-1">Agent</span>
           </h1>
           
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
@@ -198,7 +198,7 @@ const Index = () => {
           <div className="flex items-center mb-6 md:mb-0">
             <Logo size="sm" />
             <div className="text-sm text-muted-foreground ml-8">
-              © 2023 Data Compliance Companion Agent
+              © 2023 Cognizant Data Compliance Agent
             </div>
           </div>
           
