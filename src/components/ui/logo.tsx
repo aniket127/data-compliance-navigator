@@ -1,7 +1,6 @@
 
 import React from 'react';
 import { cn } from '@/lib/utils';
-import { Shield, ShieldCheck } from 'lucide-react';
 
 interface LogoProps {
   className?: string;
@@ -29,14 +28,31 @@ export const Logo: React.FC<LogoProps> = ({
   return (
     <div className={cn('flex items-center gap-2', className)}>
       <div className="relative">
-        <ShieldCheck className={cn(
-          sizeClasses[size], 
-          'text-primary animate-pulse'
-        )} />
-        <Shield className={cn(
-          sizeClasses[size], 
-          'absolute top-0 left-0 text-accent/30'
-        )} />
+        <svg 
+          className={cn(sizeClasses[size], 'text-primary')}
+          viewBox="0 0 30 30" 
+          fill="none" 
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path 
+            d="M15 2C8.373 2 3 7.373 3 14v8c0 3.314 2.686 6 6 6h12c3.314 0 6-2.686 6-6v-8c0-6.627-5.373-12-12-12z" 
+            fill="currentColor"
+            fillOpacity="0.2"
+          />
+          <path 
+            d="M15 5C10.029 5 6 9.029 6 14v5c0 2.761 2.239 5 5 5h8c2.761 0 5-2.239 5-5v-5c0-4.971-4.029-9-9-9z" 
+            stroke="currentColor"
+            strokeWidth="2"
+            fill="none"
+          />
+          <path 
+            d="M12 14l2 2 4-4" 
+            stroke="currentColor" 
+            strokeWidth="2" 
+            strokeLinecap="round" 
+            strokeLinejoin="round"
+          />
+        </svg>
       </div>
       
       {showText && (
