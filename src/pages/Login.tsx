@@ -15,7 +15,7 @@ import { Label } from '@/components/ui/label';
 import { Separator } from '@/components/ui/separator';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import Logo from '@/components/ui/logo';
-import { Eye, EyeOff, Shield, User, Key, Github, Google } from 'lucide-react';
+import { Eye, EyeOff, Shield, User, Key, Github, Mail } from 'lucide-react';
 import { toast } from 'sonner';
 import { cn } from '@/lib/utils';
 
@@ -185,7 +185,7 @@ const Login = () => {
                     onClick={() => handleSSO('Google')}
                     disabled={isLoading}
                   >
-                    <Google className="mr-2 h-4 w-4" />
+                    <Mail className="mr-2 h-4 w-4" />
                     Google
                   </Button>
                   <Button 
